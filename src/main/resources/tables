@@ -1,0 +1,14 @@
+CREATE TABLE EMP_TBL
+( id number(10) NOT NULL,
+  name varchar2(50) NOT NULL,
+   email varchar2(45) NOT NULL,
+  address varchar2(45) NOT NULL,
+  telephone varchar2(50) NOT NULL,
+  CONSTRAINT emp_pk PRIMARY KEY (id)
+);
+CREATE SEQUENCE emp_seq
+  MINVALUE 1
+  MAXVALUE 999999999999999999999999999
+  START WITH 1
+  INCREMENT BY 1
+  CACHE 20;
